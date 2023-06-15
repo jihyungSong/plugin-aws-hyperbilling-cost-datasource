@@ -13,7 +13,7 @@ def CostInfo(cost_data):
     try:
         info = {
             'cost': cost_data['cost'],
-            'usd_cost': cost_data['cost'],
+            # 'usd_cost': cost_data['cost'],
             'currency': cost_data['currency'],
             'usage_quantity': cost_data.get('usage_quantity'),
             'provider': cost_data.get('provider'),
@@ -22,7 +22,7 @@ def CostInfo(cost_data):
             'product': cost_data.get('product'),
             'account': cost_data.get('account'),
             'usage_type': cost_data.get('usage_type'),
-            'usage_unit': cost_data.get('usage_unit'),
+            # 'usage_unit': cost_data.get('usage_unit'),
             'resource': cost_data.get('resource'),
             'tags': change_struct_type(cost_data['tags']) if 'tags' in cost_data else None,
             'additional_info': change_struct_type(cost_data['additional_info']) if 'additional_info' in cost_data else None,
